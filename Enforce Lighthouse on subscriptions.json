@@ -5,25 +5,25 @@
         "managedByTenantId": {
             "type": "string",
             "metadata": {
-                "description": "Add the tenant id provided by the MSP"
+                "description": "Add the tenant id provided by the Microsoft Service Provider"
             }
         },
         "managedByName": {
             "type": "string",
             "metadata": {
-                "description": "Add the tenant name of the provided MSP"
+                "description": "Add the tenant name of the provided Microsoft Service Provider"
             }
         },
         "managedByDescription": {
             "type": "string",
             "metadata": {
-                "description": "Add the description of the offer provided by the MSP"
+                "description": "Add the description of the offer provided by the Microsoft Service Provider"
             }
         },
         "managedByAuthorizations": {
             "type": "array",
             "metadata": {
-                "description": "Add the authZ array provided by the MSP"
+                "description": "Add the authZ array provided by the Microsoft Service Provider"
             }
         }
     },
@@ -37,7 +37,7 @@
             "apiVersion": "2018-05-01",
             "name": "[variables('policyDefinitionName')]",
             "properties": {
-                "description": "Policy to enforce Lighthouse on subscriptions, delegating mgmt to MSP",
+                "description": "Policy to enforce Lighthouse on subscriptions, delegating mgmt to Microsoft Service Provider",
                 "displayName": "Enforce Lighthouse on subscriptions",
                 "mode": "All",
                 "policyType": "Custom",
@@ -46,28 +46,28 @@
                         "type": "string",                        
                         "defaultValue" : "[parameters('managedByTenantId')]",
                         "metadata": {                            
-                            "description": "Add the tenant id provided by the MSP"
+                            "description": "Add the tenant id provided by the Microsoft Service Provider"
                         }
                     },
                     "managedByName": {
                         "type": "string",
                         "defaultValue" : "[parameters('managedByName')]",
                         "metadata": {
-                            "description": "Add the tenant name of the provided MSP"
+                            "description": "Add the tenant name of the provided Microsoft Service Provider"
                         }
                     },
                     "managedByDescription": {
                         "type": "string",
                         "defaultValue" : "[parameters('managedByDescription')]",
                         "metadata": {
-                            "description": "Add the description of the offer provided by the MSP"
+                            "description": "Add the description of the offer provided by the Microsoft Service Provider"
                         }
                     },
                     "managedByAuthorizations": {
                         "type": "array",
                         "defaultValue" : "[parameters('managedByAuthorizations')]",
                         "metadata": {
-                            "description": "Add the authZ array provided by the MSP"
+                            "description": "Add the authZ array provided by the Microsoft Service Provider"
                         }
                     }
                 },
